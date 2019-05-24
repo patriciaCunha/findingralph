@@ -434,6 +434,22 @@ end
 --    destroy() - Remove all game content and set local variables to defaults.
 -- ==
 function game.destroy()
+  point = jumpCount
+  if  table.maxn(tableHighscore) < 10 then
+    table.insert( tableHighscore, point )
+  end
+  if table.maxn(tableHighscore) == 10 then
+    table.remove(tableHighscore,table.maxn(tableHighscore) )
+    table.insert( tableHighscore, point )
+  end
+
+
+local function compare( a, b )
+return a > b  -- Note ">" as the operator
+end
+
+table.sort(tableHighscore , compare )
+  
    common.gameIsRunning    = false
    --
    display.remove( layers )

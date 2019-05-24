@@ -14,7 +14,7 @@ local function gotoGame()
 end
  
 local function gotoHighScores()
-    composer.gotoScene( "highscores" )
+    composer.gotoScene( "scripts.highscores" )
 end
 
 
