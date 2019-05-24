@@ -7,7 +7,7 @@ var = true
 
 function scene:endgame()
   
-    composer.removeScene("scripts.pre_game")
+    composer.removeScene("pre_game")
     composer.gotoScene( "scripts.menu" )
 end
 

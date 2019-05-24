@@ -1,7 +1,9 @@
 local composer = require( "composer" )
  
 tableHighscore = {}
-
+if ( tableHighscore == nil or #tableHighscore == 0 ) then
+  tableHighscore = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+end
 --if ( tableHighscore == nil or #tableHighscore == 0 ) then
   --  tableHighscore = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
 --end

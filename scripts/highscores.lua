@@ -14,6 +14,7 @@ end
 
 function scene:create( event )
     local sceneGroup = self.view
+    print('patricia')
 
 
     local background = display.newImageRect( sceneGroup, "images/background.png", 800, 1400 )
@@ -74,6 +75,9 @@ function scene:hide( event )
         
     -- A segunda chamada ocorre imediatamente após a cena estar totalmente fora da tela.
     elseif ( phase == "did" ) then
+        
+		
+        composer.removeScene( "scripts.highscores" )
        -- game:remove()
         --display.remove(game)
     end

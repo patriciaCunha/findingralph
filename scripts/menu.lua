@@ -9,7 +9,6 @@ local scene = composer.newScene()
 -- -----------------------------------------------------------------------------------
 
 local function gotoGame()
-	composer.removeScene("pre_game")
     composer.gotoScene( "pre_game" )
 end
  
@@ -76,10 +75,14 @@ function scene:hide( event )
 	local sceneGroup = self.view
 	local phase = event.phase
 
+
 	if ( phase == "will" ) then
+		
 		-- Code here runs when the scene is on screen (but is about to go off screen)
 
 	elseif ( phase == "did" ) then
+		
+        composer.removeScene( "scripts.menu" )
 		
 		-- Code here runs immediately after the scene goes entirely off screen
 
@@ -91,6 +94,7 @@ end
 function scene:destroy( event )
 
 	local sceneGroup = self.view
+	print('alex')
 	-- Code here runs prior to the removal of scene's view
 
 end

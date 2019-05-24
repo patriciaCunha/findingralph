@@ -1,15 +1,7 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- game.lua - Game Module
--- =============================================================
+
 local common   = require "scripts.common"
 local composer = require "composer"
 
--- =============================================================
--- Localizations
--- =============================================================
--- Commonly used Lua Functions
 local getTimer          = system.getTimer
 local mRand             = math.random
 local mAbs              = math.abs
@@ -18,20 +10,20 @@ local mCeil             = math.ceil
 local strGSub           = string.gsub
 local strSub            = string.sub
 local strMatch          = string.match
---
--- Common SSK Display Object Builders
+
+
 local newCircle = ssk.display.newCircle;local newRect = ssk.display.newRect
 local newImageRect = ssk.display.newImageRect;local newSprite = ssk.display.newSprite
 local quickLayers = ssk.display.quickLayers
---
--- Common SSK Helper Modules
+
+
 local easyIFC = ssk.easyIFC;local persist = ssk.persist
---
--- Common SSK Helper Functions
+
+
 local isValid = display.isValid;local isInBounds = ssk.easyIFC.isInBounds
 local normRot = math.normRot;local easyAlert = ssk.misc.easyAlert
---
--- SSK 2D Math Library
+
+
 local addVec = ssk.math2d.add;local subVec = ssk.math2d.sub;local diffVec = ssk.math2d.diff
 local lenVec = ssk.math2d.length;local len2Vec = ssk.math2d.length2;
 local normVec = ssk.math2d.normalize;local vector2Angle = ssk.math2d.vector2Angle
@@ -41,36 +33,36 @@ local RGTiled = ssk.tiled; local files = ssk.files
 local factoryMgr = ssk.factoryMgr; local soundMgr = ssk.soundMgr
 local newText = display.newText
 
---if( ssk.misc.countLocals ) then ssk.misc.countLocals(1) end
 
--- =============================================================
--- Locals
--- =============================================================
+
+
+
+
 local layers
 --
 local scale          = fullw/1140
 
 --
--- These variables control the sizing of the platforms. 
--- If you change them, you may need to adjust your art.
+
+
 local platW          = 240
 local platH          = 60
 
--- This variable controls player jump height/dist + placement of the platforms.
+
 local jumpDist       = 200
 
--- These variables are used to track the platform position values.
+
 local curY           = bottom - jumpDist * 2
 local x0             = left + platW/2 
 local x1             = right - platW/2
 
--- Initial lava movement rate and min/maximum movement rate
+
 local minLavaRate    = 0.2
 local maxLavaRate    = 5.3
 local lavaRate       = minLavaRate
 
--- Lava rate increase: Every jump lavaRate becomes -> lavaRate * lavaMult
--- i.e. The more you jump the faster it goes, till hit hits max rate.
+
+
 local lavaMult       = 1.1
 
 -- This flag gates logic, making it wait till the player begins to jump.
@@ -433,15 +425,37 @@ end
 -- ==
 --    destroy() - Remove all game content and set local variables to defaults.
 -- ==
+
+
+
 function game.destroy()
   point = jumpCount
-  if  table.maxn(tableHighscore) < 10 then
-    table.insert( tableHighscore, point )
-  end
-  if table.maxn(tableHighscore) == 10 then
-    table.remove(tableHighscore,table.maxn(tableHighscore) )
-    table.insert( tableHighscore, point )
-  end
+
+  -- pode_armazenar =true
+
+  -- for primeiro = 10, 1, -1
+	-- do
+	-- 	for segundo = 10, 1, -1
+	-- 	do
+	-- 		if (primeiro ~= segundo) then
+	-- 			if (tableHighscore[primeiro] == tableHighscore[segundo]) then
+	-- 				if(tableHighscore[primeiro] ~= 0) then
+	-- 					pode_armazenar =  false
+	-- 				end
+	-- 			end
+	-- 		end
+	-- 	end
+	-- end
+
+  -- if pode_armazenar then
+    if  table.maxn(tableHighscore) < 10 then
+      table.insert( tableHighscore, point )
+    end
+    if table.maxn(tableHighscore) == 10 then
+      table.remove(tableHighscore,table.maxn(tableHighscore) )
+      table.insert( tableHighscore, point )
+    end
+ -- end
 
 
 local function compare( a, b )
