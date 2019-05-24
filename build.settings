@@ -1,57 +1,23 @@
---
--- For more information on build.settings, see the Project Build Settings guide at:
--- https://docs.coronalabs.com/guide/distribution/buildSettings
---
+-- =============================================================
+-- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
+-- =============================================================
+--  build.settings
+-- =============================================================
+-- https://docs.coronalabs.com/guide/distribution/buildSettings/index.html
+-- https://docs.coronalabs.com/guide/tvos/index.html
+-- https://docs.coronalabs.com/guide/distribution/win32Build/index.html
+-- https://docs.coronalabs.com/guide/distribution/osxBuild/index.html
+-- =============================================================
 
-settings =
-{
-	orientation =
-	{
-		-- Supported values for orientation:
-		-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
-		default = "portrait",
-		supported = { "portrait", },
-	},
+local orientation = 'portrait' -- portrait, landscapeRight, ...
 
-	--
-	-- Android section
-	--
-	android =
-	{
-		usesPermissions =
-		{
-			"android.permission.INTERNET",
-		},
-	},
 
-	--
-	-- iOS section
-	--
-	iphone =
-	{
-		xcassets = "Images.xcassets",
-		plist =
-		{
-			UIStatusBarHidden = false,
-			UILaunchStoryboardName = "LaunchScreen",
-		},
-	},
-
-	--
-	-- Plugins section
-	--
-	plugins =
-	{
-
-	},
-
-	--
-	-- Project section
-	--
-	excludeFiles =
-	{
-		-- Exclude unnecessary files for each platform
-		all = { "Icon.png", "Icon-*dpi.png", "Images.xcassets", },
-		android = { "LaunchScreen.storyboardc", },
-	},
+settings = {
+-------------------------------------------------------------------------------
+--  Orientation Settings 
+-------------------------------------------------------------------------------
+   orientation = {
+      default     = orientation,
+      supported   = { orientation },
+   },
 }

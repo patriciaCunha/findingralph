@@ -7,4 +7,5 @@ display.setStatusBar( display.HiddenStatusBar )
 math.randomseed( os.time() )
  
 -- Go to the menu screen
-composer.gotoScene( "game" )
+composer.gotoScene( "scripts.menu" )
+-- composer.gotoScene( "pre_game" )
