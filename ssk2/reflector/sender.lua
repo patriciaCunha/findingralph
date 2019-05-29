@@ -1,6 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
+
 -- This tool uses the free AutoLan by M.Y. Developers
 -- http://www.mydevelopersgames.com/AutoLAN/Features.html
 local server = require("ssk2.external.mydevelopers.autolan.Server") 

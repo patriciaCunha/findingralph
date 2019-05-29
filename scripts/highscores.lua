@@ -39,7 +39,7 @@ function scene:create( event )
     end
 
 
-    local playButton = display.newImageRect( sceneGroup, "images/play.png", tamanhoPlay, tamanhoPlay/2 )
+    local playButton = display.newImageRect( sceneGroup, "images/back.png", tamanhoPlay, tamanhoPlay/2 )
 	playButton.x = display.contentCenterX
     playButton.y = display.contentCenterY+200
 

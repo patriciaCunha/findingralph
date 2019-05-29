@@ -1,30 +1,7 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Easy Social Features - Currently ONLY Rating
--- =============================================================
-
 local social = {}
 _G.ssk.social = social
 
--- ==
---    Easy Rating Function - Just pass in correct ID (+ App Name for tvOS) for current Store
---
---		Params:
--- 		id           - ID of app, varies by store (see 'Supported Stores' below)
---       appName      - (Optional) Name of app (used for tvOS).
---       preProcessed - Set this to 'true' if you have already converted your app name to a 'proper' string
---                      for the URL, otherwise rate() will try to convert the appName into a 'proper' string.
---
---    Supported Stores:
---
---    Amazon (untested)          		- id == "Package Name" used when buiding app
---    Google Play (tested)   				- id == "Package Name" used when buiding app
---    iTunes Connect (tested)    		- id == Numeric App ID found on your store page when submitting app.
---    (Apple) tvOS Store (untested)    - id == Numeric App ID found on your store page when submitting app.
---                                     - appName == Name of app.  Utility will clean it for you.
---
--- ==
+
 function social.rate( params )
 	params = params or {}
 	local id = params.id or ""

@@ -1,9 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- =============================================================
--- display.* - Extension(s)
--- =============================================================
+
 local type = type
 display.isValid = function ( obj )
 	return ( obj and obj.removeSelf and type(obj.removeSelf) == "function" )

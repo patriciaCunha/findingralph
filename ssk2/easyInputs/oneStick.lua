@@ -1,8 +1,3 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- One Stick - Virtual Joystick Factory
--- =============================================================
 local joystick 	= ssk.easyInputs.joystick
 local newRect	= ssk.display.newRect
 local inputs

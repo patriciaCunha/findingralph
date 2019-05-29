@@ -1,8 +1,3 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Quick Layers Utility
--- =============================================================
 local debugLevel = ssk.__debugLevel or 0
 local function _dprint( lvl, ... )
 	if( debugLevel >= lvl ) then

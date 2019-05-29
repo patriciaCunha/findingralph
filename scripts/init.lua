@@ -1,6 +1,3 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
 local common  = require "scripts.common"
 local utils   = require "scripts.utils"
 -- =============================================================

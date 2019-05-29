@@ -1,6 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
+
 local getTimer  = system.getTimer
 local strGSub   = string.gsub
 local strSub    = string.sub

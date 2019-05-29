@@ -1,9 +1,3 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Display Factories
--- =============================================================
-
 local displayExtended = {}
 
 local display_newCircle 		= display.newCircle

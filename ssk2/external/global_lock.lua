@@ -1,11 +1,3 @@
---===================================================
---=  Niklas Frykholm 
--- basically if user tries to create global variable
--- the system will not let them!!
--- call GLOBAL_lock(_G)
--- Downloaded from: http://lua-users.org/wiki/DetectingUndefinedVariables
---
---===================================================
 function GLOBAL_lock(t)
   local mt = getmetatable(t) or {}
   mt.__newindex = lock_new_index

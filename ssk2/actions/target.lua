@@ -1,8 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Actions Library - Target Acquisition Functions
--- =============================================================
+
 local target = {}
 
 -- Forward Declarations

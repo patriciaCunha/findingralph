@@ -1,18 +1,4 @@
--- =============================================================
---
--- This is an implementation of a md5 based
--- pseudo random number generator which creates the same
--- sequence of values for implementations on different
--- platforms (Hans Raaf)
---
--- Credit: http://developer.coronalabs.com/code/portable-seedable-random-number-generator 
--- 
--- =============================================================
---   Last Updated: 23 NOV 2016
--- Last Validated: 
--- =============================================================
- 
--- copy what we need as local
+
 local floor=math.floor
 local byte=string.byte
 local sub=string.sub

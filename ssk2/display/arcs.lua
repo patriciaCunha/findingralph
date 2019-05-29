@@ -1,10 +1,3 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Arc Factories
--- =============================================================
--- Create the display class if it does not yet exist
---
 local displayExtended = {}
 
 local mAbs = math.abs

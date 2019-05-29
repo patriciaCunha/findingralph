@@ -1,10 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Shuffle Bag 
---
--- Concept ==> https://gamedevelopment.tutsplus.com/tutorials/shuffle-bags-making-random-feel-more-random--gamedev-1249
--- =============================================================
+
 
 local shuffleBag = {}
 

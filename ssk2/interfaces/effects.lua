@@ -1,12 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Development Notes:
--- 1. Some features still not exposed/documented.
--- 2. Easy Fly Out Not Ready yet
--- ==
---    isInBounds( obj, obj2 ) - Is the center of obj over obj2 (inside its axis aligned bounding box?)
--- ==
+
 local function isInBounds( obj, obj2 )
 
 	if(not obj2) then return false end

@@ -1,8 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Extensions Loader
--- =============================================================
+
 require("ssk2.extensions.display")
 require("ssk2.extensions.io")
 require("ssk2.extensions.math")

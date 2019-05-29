@@ -1,6 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
+
 local measure = {}
 local function countGlobals()
 	local count = 0

@@ -1,25 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- transition.* - Extension(s)
--- =============================================================
--- =============================================================
--- Adapted from http://developer.coronalabs.com/code/color-transition-wrapper with fixes.
--- =============================================================
--- Description:
--- This is a wrapper for changing fill color within a transition
--- Time, delay and easing values are optional
---
--- Usage:
--- transition.color(displayObject, fromColor, toColor, [time], [delay], [easing])
---
--- ex:
--- local rect = display.newRect(0,0,250,250)
--- local white = {1,1,1}     
--- local red = {1,0,0}
---      
---  transition.color(rect, white, red, 1200)
--- =============================================================
+
  function transition.color( obj, params )
  	params = params or {}
  	--table.dump(params)

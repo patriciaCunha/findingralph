@@ -1,8 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Actions Library - Facing Functions
--- =============================================================
+
 local function face( obj, params )
 	local target = params.target or obj._target 
 	local angle  = params.angle

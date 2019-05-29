@@ -1,8 +1,3 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Global Functions
--- =============================================================
 
 local getTimer  = system.getTimer
 local strGSub   = string.gsub

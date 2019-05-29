@@ -1,8 +1,3 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Two Touch - Touch Pads Factory
--- =============================================================
 local newRect           = ssk.display.newRect
 local inputHelper
 

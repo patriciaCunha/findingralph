@@ -1,12 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- DEFAULT Easy IFC Buttons Presets for SSK 2
--- =============================================================
 
---
--- labelsInit.lua - Create Label Presets
---
 local mgr = require "ssk2.interfaces.buttons"
 local imagePath = "ssk2/interfaces/presets/default/images/"
 local gameFont = ssk.__gameFont or native.systemFontBold

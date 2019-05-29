@@ -1,8 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
 
--- Localizing math functions for speedup!
 local mDeg  = math.deg
 local mRad  = math.rad
 local mCos  = math.cos

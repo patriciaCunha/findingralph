@@ -1,8 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Easy Inputs Loader
--- =============================================================
+
 local easyInputs = {}
 _G.ssk.easyInputs = easyInputs
 easyInputs.joystick 		= require("ssk2.easyInputs.joystick")

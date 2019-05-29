@@ -1,14 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Tiled Loader
--- =============================================================
--- Development Notes:
--- -none-
--- =============================================================
--- ==
---    Localizations
--- ==
+
 local getTimer = system.getTimer
 
 -- Helpers taken from PonyTiled: 

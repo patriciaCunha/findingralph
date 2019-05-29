@@ -1,22 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Factory Manager
--- =============================================================
---[[
-		register() - Called to 'register' a factory (module) by name, 
-		             so it can be used later.		
 
-		    init() - Called once to intialize a factory or factories.
-
-		   reset() - Called to reset the state of a factory or factories.  
-		             Rarely needed.)
-
-		     new() - Called to create new instance(s) of the named 
-		             factory's object(s).
-]]
--- =============================================================
--- =============================================================
 local factoryMgr = {}
 _G.ssk.factoryMgr = factoryMgr
 

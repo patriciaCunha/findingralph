@@ -1,6 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
+
 local lfs         = require "lfs"
 local json        = require "json"
 

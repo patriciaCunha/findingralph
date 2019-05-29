@@ -1,8 +1,3 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Basic Dialog (Tray)
--- =============================================================
 local mAbs = math.abs
 local pairs = pairs
 local newCircle = ssk.display.newCircle;local newRect = ssk.display.newRect

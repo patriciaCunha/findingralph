@@ -1,11 +1,6 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
 local common = {}
 
--- =============================================================
--- Select an art theme for the game.
--- =============================================================
+
 common.theme = "ansimuz" -- ansimuz kenney casual flat medieval prototype 
 
 common.textFill1 = _W_

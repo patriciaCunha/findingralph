@@ -1,8 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- RG Files Module Library - Loader and Initializer
--- =============================================================
+
 local lfs 			= require "lfs"
 local json        = require "json"
 

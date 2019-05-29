@@ -1,8 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Actions Library - Move via Physics Functions
--- =============================================================
+
 local movep = {}
 
 -- Forward Declarations

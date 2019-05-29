@@ -1,4 +1,3 @@
-
 local common   = require "scripts.common"
 local composer = require "composer"
 

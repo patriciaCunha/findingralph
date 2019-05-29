@@ -1,6 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
+
 local fnn = function( ... ) 
 	for i = 1, #arg do
 		local theArg = arg[i]

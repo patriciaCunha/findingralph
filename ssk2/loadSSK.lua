@@ -1,15 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Development Notes:
--- 1. In future, add extras/particleTrail.lua w/ CBE, prism, newEmitter, ++
--- 2. Add event reflector?
--- =============================================================
 
--- ==
---    fnn( ... ) - Return first argument from list that is not nil.
---    ... - Any number of any type of arguments.
--- ==
 local function fnn( ... ) 
 	for i = 1, #arg do
 		local theArg = arg[i]

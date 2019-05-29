@@ -1,8 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Collision Calculator
--- =============================================================
+
 
 local function rpad(str, len, char)
     if char == nil then char = ' ' end
@@ -14,10 +10,7 @@ local ccmgr
 ccmgr = {}
 	
 -- ==
---    ssk.ccmgr:newCalculator() - Creates a blank (unconfigured) collision calculator.
---    val - The value to round.
---    n - Number of decimal places to round to.
---    Returns a collision calculator instance (myCC).
+
 -- ==
 function ccmgr:newCalculator()
 

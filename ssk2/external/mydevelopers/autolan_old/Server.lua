@@ -1,18 +1,4 @@
--- MODIFIED TO SUPPORT IPV6 (see https://github.com/roaminggamer/AutoLan-IPv6)
---[[
-Corona® AutoLAN v 1.2
-Author: M.Y. Developers
-Copyright (C) 2011 M.Y. Developers All Rights Reserved
-Support: mydevelopergames@gmail.com
-Website: http://www.mygamedevelopers.com/Corona--Profiler.html
-License: Many hours of genuine hard work have gone into this project and we kindly ask you not to redistribute or illegally sell this package. 
-We are constantly developing this software to provide you with a better development experience and any suggestions are welcome. Thanks for you support.
 
--- IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE 
--- FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
--- OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
--- DEALINGS IN THE SOFTWARE.
---]]
 local socket = require "socket"
 
 -- Check if this is socket 2 or later

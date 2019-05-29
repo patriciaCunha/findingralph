@@ -1,18 +1,3 @@
--- =============================================================
--- Property Callbacks - Adds the ability to detect when a property is changed
--- on a display object.  
---
--- Throws the event 'propertyUpdate' with name and value of property changed.
---
--- =============================================================
--- Credit: https://coronalabs.com/blog/2012/05/01/tutorial-property-callbacks/
--- =============================================================
---   Last Updated: 23 NOV 2016
--- Last Validated: 
--- =============================================================
--- Development notes:
--- 1. Attempt to expand this to support 'Runtime' events option.
---
 
 local m = {}
 local misc = {}

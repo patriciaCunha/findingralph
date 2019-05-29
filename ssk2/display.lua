@@ -1,8 +1,4 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Display Factories Loader
--- =============================================================
+
 local function shallowCopy( src, dst )
 	local dst = dst or {}
 	if( not src ) then return dst end

@@ -1,12 +1,3 @@
--- =============================================================
--- Copyright Roaming Gamer, LLC. 2008-2018 (All Rights Reserved)
--- =============================================================
--- Various 'Basic' Cameras 
---
--- While these can be used out-of-the-box, the purpose of this module
--- is to give you a 'starting' point for your own custom camera logic.
--- =============================================================
-
 local camera = {}
 
 local centerX 	= display.contentCenterX
